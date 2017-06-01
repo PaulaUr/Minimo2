@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AppMinimo2</string>
+    <string name="EditLogin"></string>
+    <string name="buttonExplore">Explore</string>
+    <string name="imageuser">imageUser</string>
+    <string name="textlogin">TextLogin</string>
+    <string name="textRepos">TextRepos</string>
+    <string name="textfollowing">TextFollowing</string>
+    <string name="textRep">Repositories</string>
+    <string name="textFollow">Following</string>
+    <string name="textFollowers">Followers</string>
+    <string name="textView_superior">TextName</string>
+
+</resources>

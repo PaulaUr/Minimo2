@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:contentDescription="@string/imageuser"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_below="@+id/textLog"
+        android:layout_alignLeft="@+id/textLog"
+        android:layout_alignStart="@+id/textLog" />
+
+    <TextView
+        android:id="@+id/textLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="casual"
+        android:text="@string/textlogin"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:ignore="RelativeOverlap,UnusedAttribute" />
+
+    <TextView
+        android:id="@+id/textRepos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/textRepos"
+        tools:ignore="RelativeOverlap"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textFollowing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textfollowing"
+        android:layout_below="@+id/imageView"
+        android:layout_alignRight="@+id/textRepos"
+        android:layout_alignEnd="@+id/textRepos" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textRepos"
+        android:layout_alignBottom="@+id/textRepos"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_toLeftOf="@+id/textFollowing"
+        android:layout_toStartOf="@+id/textFollowing"
+        android:fontFamily="casual"
+        android:text="@string/textRep"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:ignore="RelativeOverlap,UnusedAttribute" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textFollowing"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:fontFamily="casual"
+        android:text="@string/textFollow"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:ignore="UnusedAttribute" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textFollowing"
+        android:layout_marginTop="95dp"></ListView>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="49dp"
+        android:layout_toLeftOf="@+id/textView2"
+        android:layout_toStartOf="@+id/textView2"
+        android:fontFamily="casual"
+        android:text="@string/textFollowers"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="UnusedAttribute" />
+
+
+</RelativeLayout>
