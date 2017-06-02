@@ -11,8 +11,8 @@ import java.util.List;
 
 public class GlobalData extends Application{
 
-    private String token;
     private String username;
+    private String avatar_url;
     private  Integer following;
     private  Integer public_repos;
     private List<Followers> followersList;
@@ -25,15 +25,6 @@ public class GlobalData extends Application{
     public void setUsername(String username) {
         this.username = username;
     }
-
-    public String getToken() {
-        return token;
-    }
-
-    public void setToken(String tokenRec) {
-        this.token = tokenRec;
-    }
-
 
     public String getFollowing() {
         return String.valueOf(following);
@@ -57,6 +48,14 @@ public class GlobalData extends Application{
 
     public void setFollowersList(List<Followers> followersList) {
         this.followersList = followersList;
+    }
+
+    public String getAvatar_url() {
+        return avatar_url;
+    }
+
+    public void setAvatar_url(String avatar_url) {
+        this.avatar_url = avatar_url;
     }
 
     @Override

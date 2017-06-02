@@ -7,6 +7,14 @@
     android:orientation="horizontal"
     tools:context="edu.upc.eetac.dsa.appminimo2.MainActivity">
 
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonExplore"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="81dp"
+        android:visibility="invisible"/>
     <EditText
         android:id="@+id/editText"
         android:layout_width="wrap_content"

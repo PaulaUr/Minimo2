@@ -8,11 +8,11 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
         android:contentDescription="@string/imageuser"
-        app:srcCompat="@mipmap/ic_launcher"
+        android:src="@android:drawable/ic_menu_gallery"
         android:layout_below="@+id/textLog"
         android:layout_alignLeft="@+id/textLog"
         android:layout_alignStart="@+id/textLog" />
@@ -21,18 +21,18 @@
         android:id="@+id/textLog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="30dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="casual"
         android:text="@string/textlogin"
         android:textColor="@android:color/holo_purple"
         android:textSize="16sp"
         android:textStyle="bold"
-        tools:ignore="RelativeOverlap,UnusedAttribute" />
+        tools:ignore="RelativeOverlap,UnusedAttribute"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:id="@+id/textRepos"
@@ -86,6 +86,7 @@
         android:textStyle="bold"
         tools:ignore="UnusedAttribute" />
 
+
     <ListView
         android:id="@+id/list"
         android:layout_width="match_parent"
@@ -94,24 +95,24 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textFollowing"
-        android:layout_marginTop="95dp"></ListView>
+        android:layout_marginTop="70dp"></ListView>
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView2"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        android:layout_marginTop="49dp"
-        android:layout_toLeftOf="@+id/textView2"
-        android:layout_toStartOf="@+id/textView2"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginTop="25dp"
         android:fontFamily="casual"
         android:text="@string/textFollowers"
         android:textColor="@android:color/holo_purple"
         android:textSize="18sp"
         android:textStyle="bold"
-        tools:ignore="UnusedAttribute" />
+        tools:ignore="UnusedAttribute"
+        android:layout_below="@+id/textView2"
+        android:layout_toLeftOf="@+id/textView2"
+        android:layout_toStartOf="@+id/textView2" />
 
 
 </RelativeLayout>

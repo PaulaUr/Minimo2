@@ -6,19 +6,19 @@ package edu.upc.eetac.dsa.appminimo2.Entity;
 
 public class RowItem {
 
-    private int imageId;
+    private String imageId;
     private String title;
 
-    public RowItem(int imageId, String title) {
+    public RowItem(String imageId, String title) {
         this.imageId = imageId;
         this.title = title;
     }
 
-    public int getImageId() {
+    public String getImageId() {
         return imageId;
     }
 
-    public void setImageId(int imageId) {
+    public void setImageId(String imageId) {
         this.imageId = imageId;
     }
 

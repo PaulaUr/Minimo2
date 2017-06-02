@@ -11,13 +11,12 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+
 import java.util.List;
 
 import edu.upc.eetac.dsa.appminimo2.R;
 
-/**
- * Created by pauli on 01/06/2017.
- */
 
 public class List_adapter extends ArrayAdapter<RowItem> {
 
@@ -48,7 +47,10 @@ public class List_adapter extends ArrayAdapter<RowItem> {
         }else
             holder=(ViewHolder)convertView.getTag();
         holder.textName.setText(rowItem.getTitle());
-        holder.imageView.setImageResource(rowItem.getImageId());
+     //   holder.imageView.setImageResource(rowItem.getImageId());
+        Glide.with(context).load(rowItem.getImageId()).into(holder.imageView);
+
+
         return convertView;
     }
 }

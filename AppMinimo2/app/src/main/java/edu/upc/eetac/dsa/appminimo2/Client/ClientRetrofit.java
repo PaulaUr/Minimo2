@@ -18,6 +18,10 @@ public interface ClientRetrofit {
     @GET("/users/{username}/followers")
     Call<List<Followers>> list_followers (@Path("username") String username);
 
+    @GET("/{id}")
+    Call<Followers> imageFollowers (@Path("id")Integer id);
+
+
    // @GET("/Users")
    // Call<List<Followers>> list_followers2 ();
 
